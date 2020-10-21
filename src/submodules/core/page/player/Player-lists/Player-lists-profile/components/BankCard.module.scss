@@ -1,0 +1,130 @@
+@import 'Styled/styles.scss';
+
+.bankCard {
+  $left: 16px;
+  position: relative;
+  width: 311px;
+  height: 163px;
+  overflow: hidden;
+  border-radius: 12px;
+  color: #ffffff;
+  font-family: NotoSans;
+  .text {
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: 0.36px;
+    color: $borderColor;
+    margin-right: 8px;
+  }
+  .text12 {
+    @extend .text;
+    font-size: 12px;
+  }
+  .boldText {
+    @extend .text;
+    font-weight: bold;
+    color: #ffffff;
+    left: $left;
+  }
+  .boldText12 {
+    @extend .boldText;
+    font-size: 12px;
+  }
+  .iconRound {
+    position: absolute;
+    z-index: 999;
+    top: 27px;
+    right: 16px;
+    opacity: 0.32;
+    background-color: #ffffff;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+  .icon {
+    position: absolute;
+    z-index: 1000;
+    top: 33px;
+    right: 18.5px;
+    color: #ffffff;
+    z-index: 89;
+    cursor: pointer;
+  }
+  .hide {
+    position: absolute;
+    top: 0;
+    padding-top: 32px;
+    padding-left: 16px;
+    z-index: 100;
+
+    .cardName {
+      top: 32px;
+      font-size: 14px;
+      line-height: 1.36;
+      letter-spacing: 0.39px;
+      margin-bottom: 34px;
+    }
+
+    .cardNum {
+      display: flex;
+      height: 20px;
+      color: #ffffff;
+      font-size: 16px;
+      line-height: 1.36;
+      letter-spacing: 2.02px;
+      margin-bottom: 32px;
+      font-weight: bold;
+
+      .num {
+        margin-right: 16px;
+      }
+    }
+    .bankName {
+      @extend .boldText;
+    }
+  }
+  .show {
+    position: absolute;
+    top: 0;
+    padding-top: 16px;
+    padding-left: 16px;
+    z-index: 100;
+    color: #ffffff;
+    .row {
+      margin-bottom: 16px;
+      height: 12px;
+    }
+    .row14 {
+      @extend .row;
+      height: 14px;
+    }
+    .subText {
+      margin-right: 8px;
+    }
+    .iconRoundDel {
+      position: absolute;
+      z-index: 999;
+      top: 123px;
+      right: 16px;
+      opacity: 0.32;
+      background-color: $dangerColor;
+      width: 24px;
+      height: 24px;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+    .delete {
+      position: absolute;
+      z-index: 1000;
+      top: 129px;
+      right: 18.5px;
+      color: #ffffff;
+      z-index: 89;
+      cursor: pointer;
+    }
+  }
+}

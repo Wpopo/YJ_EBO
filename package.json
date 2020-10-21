@@ -1,0 +1,93 @@
+{
+  "name": "inump-web-ebo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ckeditor/ckeditor5-react": "^2.1.0",
+    "@date-io/date-fns": "1.x",
+    "@loadable/component": "^5.12.0",
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.56",
+    "@material-ui/pickers": "4.0.0-alpha.12",
+    "@nivo/bar": "^0.62.0",
+    "@nivo/line": "^0.62.0",
+    "@nivo/pie": "^0.62.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "array-move": "^3.0.1",
+    "axios": "^0.19.2",
+    "ckeditor5-custom-build": "git+http://inp-web-deploy:zSBALD4yQkg6kVM7mfSw@gitlab-inp.yjtech.tw/inp-project/web/packages/ckeditor5-build-classic-inp.git",
+    "classnames": "^2.2.6",
+    "date-fns": "^2.16.1",
+    "immer": "^6.0.3",
+    "line-awesome": "^1.3.0",
+    "lodash.intersection": "^4.4.0",
+    "md5": "^2.3.0",
+    "mockjs": "^1.1.0",
+    "nivo": "^0.31.0",
+    "node-sass": "^4.13.1",
+    "p-each-series": "^2.1.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-hook-form": "^6.7.0",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.1",
+    "react-select": "^3.1.0",
+    "react-sortable-hoc": "^1.11.0",
+    "react-spinners-kit": "^1.9.1",
+    "react-swipeable-views": "^0.13.9",
+    "react-table": "^7.5.0",
+    "react-table-sticky": "^1.1.3",
+    "react-toastify": "^6.0.8",
+    "redux": "^4.0.5",
+    "redux-actions": "^2.6.5",
+    "redux-immer": "^1.0.5",
+    "redux-persist": "^6.0.0",
+    "redux-saga": "^1.1.3",
+    "redux-thunk": "^2.3.0",
+    "use-immer": "^0.4.0"
+  },
+  "scripts": {
+    "start": "cp ./.env.dev ./.env && ./node_modules/.bin/react-app-rewired start",
+    "build": "cp ./.env.prod ./.env && ./node_modules/.bin/react-app-rewired build",
+    "test": "./node_modules/.bin/react-app-rewired test",
+    "eject": "./node_modules/.bin/react-app-rewired eject",
+    "storybook": "start-storybook -p 60000"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-storysource": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/preset-create-react-app": "^3.1.4",
+    "@storybook/react": "^5.3.19",
+    "axios-mock-adapter": "^1.18.2",
+    "axios-mock-adapter-path-params": "^1.20.0",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-import": "^1.13.0",
+    "customize-cra": "^0.9.1",
+    "cz-customizable": "^6.2.0",
+    "react-app-rewired": "^2.1.6",
+    "speed-measure-webpack-plugin": "^1.3.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  }
+}

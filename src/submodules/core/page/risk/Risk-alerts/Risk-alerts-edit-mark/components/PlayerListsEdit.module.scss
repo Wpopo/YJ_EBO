@@ -1,0 +1,39 @@
+@import 'Styled/styles.scss';
+.root {
+  padding: 32px;
+  background-color: #ffffff;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+
+  .title {
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: 0.51px;
+    text-align: left;
+    color: $titleColor;
+  }
+  .title:nth-child(3) {
+    margin-top: 32px;
+  }
+  .flexWrap {
+    max-width: 1062px;
+    display: flex;
+    flex-wrap: wrap;
+    .item {
+      width: 311px;
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin: 32px 32px 0 0;
+      height: 8px + 14px + 36px;
+    }
+    .item:nth-child(3n) {
+      margin-right: unset !important;
+    }
+  }
+  .checkIcon {
+    color: $successColor;
+  }
+}

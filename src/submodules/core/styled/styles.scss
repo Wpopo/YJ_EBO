@@ -1,0 +1,142 @@
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('./noto-sans.woff2');
+}
+
+body {
+  font-size: 14px;
+}
+
+// 預設字型大小
+$fontSize: 14px;
+
+@mixin mainTitleFont {
+  font-family: 'Noto Sans';
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  font-size: 20px;
+  color: $titleColor;
+  line-height: 1.35;
+  letter-spacing: 0.8px;
+  text-align: left;
+}
+
+@mixin sidebarActiveTitleFont {
+  font-family: 'Noto Sans';
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.38;
+  letter-spacing: 0.51px;
+  text-align: left;
+}
+
+@mixin sidebarTitleFont {
+  font-family: 'Noto Sans';
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.38;
+  font-size: 16px;
+  color: #ffffff;
+  letter-spacing: 0.51px;
+  text-align: left;
+}
+
+@mixin sidebarActiveSubTitleFont {
+  font-family: 'Noto Sans';
+  font-weight: bold;
+  font-size: $fontSize;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.36;
+  color: #ffffff;
+  letter-spacing: 0.39px;
+}
+
+@mixin sidebarSubTitleFont {
+  font-family: 'Noto Sans';
+  font-weight: normal;
+  font-size: $fontSize;
+  color: #ffffff;
+  line-height: 1.36;
+  letter-spacing: 0.45px;
+}
+
+@mixin tableTitleFont {
+  font-family: 'Noto Sans';
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  font-size: $fontSize;
+  color: $titleColor;
+  line-height: 1.36;
+  text-align: left;
+}
+
+@mixin LabelFont {
+  font-family: 'Noto Sans';
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  font-size: $fontSize !important;
+  color: $titleColor;
+  line-height: 1.36;
+  letter-spacing: 0.39px;
+}
+
+@mixin tableTextLeftFont {
+  font-family: 'Noto Sans';
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  font-size: $fontSize !important;
+  color: $bodyColor;
+  line-height: 1.36 !important;
+  letter-spacing: normal;
+  text-align: left;
+}
+@mixin tableTextRightFont {
+  font-family: 'Noto Sans';
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  font-size: $fontSize;
+  color: $bodyColor;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: right;
+}
+
+// 顏色變數 from 設計師
+$mainColor: #7571f9;
+$secondaryColor: #6da8e5;
+$titleColor: #222222;
+$bodyColor: #495057;
+$placeholderColor: #999999;
+$borderColor: #ced4da;
+$lineColor: #f3f3f3;
+$primaryColor: #5c80d1;
+$secondaryColor2: #6c757d;
+$successColor: #46c37b;
+$dangerColor: #d26a5c;
+$warningColor: #f29d56;
+$infoColor: #70b9eb;
+
+//顏色變數 自定
+$disabledColor: #49505785;
+$dividerColor: #999999;
+
+:export {
+  mainColor: $mainColor;
+  secondaryColor: $secondaryColor;
+  primaryColor: $primaryColor;
+  successColor: $successColor;
+  placeholderColor: $placeholderColor;
+  dangerColor: $dangerColor;
+  warningColor: $warningColor;
+}

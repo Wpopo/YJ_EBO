@@ -1,0 +1,103 @@
+@import 'Styled/styles.scss';
+
+.boxWrap {
+  display: flex;
+  > div {
+    display: flex;
+    align-items: center;
+  }
+  .box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 298px;
+    height: 150px;
+    border-radius: 8px;
+    box-shadow: 8px 16px 40px 0 rgba(169, 157, 231, 0.16);
+    background-color: #ffffff;
+    .title {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: calc(50% - 73px / 2);
+      top: -15px;
+      width: 73px;
+      height: 30px;
+      background-color: $mainColor;
+      color: #ffffff;
+      border-radius: 20px;
+    }
+    .sign {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: -37px;
+      top: 32px;
+      width: 57px;
+      height: 20px;
+      background-color: $primaryColor;
+      color: #ffffff;
+      font-size: 10px;
+      font-weight: bold;
+      &:after {
+        position: absolute;
+        content: '';
+        bottom: -5px;
+        left: 0px;
+        width: 0;
+        height: 0;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        border-right: 5px solid $primaryColor;
+      }
+
+      &:nth-child(3) {
+        top: 64px;
+        background-color: $infoColor;
+        &:after {
+          border-right: 5px solid $infoColor;
+        }
+      }
+    }
+    .amount {
+      padding-top: 32px;
+      color: $primaryColor;
+    }
+    .amount2 {
+      padding-top: 16px;
+      color: $infoColor;
+    }
+    .controlGroup {
+      position: absolute;
+      bottom: 16px;
+      left: 16px;
+      display: flex;
+      [class^='MuiButtonGroup-root'] {
+        margin-right: 8px;
+      }
+      [class^='InputDetailData_root'] {
+        width: 170px;
+      }
+
+      button {
+      }
+    }
+  }
+  .connect {
+    font-size: 20px;
+    padding: 0 16px;
+  }
+}
+.line {
+  display: flex;
+  border-top: 1px solid $borderColor;
+  margin: 32px 0;
+}
+.bottom {
+  [class^='InputDetailData_root'] {
+    width: 100%;
+  }
+}

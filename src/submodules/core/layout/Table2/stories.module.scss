@@ -1,0 +1,47 @@
+@import 'Styled/styles.scss';
+
+.excess {
+  color: $dangerColor;
+}
+.button {
+  width: 56px;
+  height: 20px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  span {
+    font-size: 12px;
+  }
+  &.styles1 {
+    background-color: #dfe6f6;
+    color: #2c4e9b;
+  }
+  &.styles2 {
+    background-color: #fcf1e1;
+    color: #c57a0f;
+  }
+  &.styles3 {
+    background-color: #daf5e6;
+    color: #22683f;
+  }
+}
+.btnGroup {
+  display: flex;
+  flex-direction: row;
+  :global {
+    [class^='SpanStatus'] {
+      padding: 0 4px;
+      margin-right: 10px;
+      width: fit-content;
+    }
+  }
+}
+.story {
+  :global {
+    [class^='SwitchBase_text'] {
+      width: auto !important;
+    }
+  }
+}

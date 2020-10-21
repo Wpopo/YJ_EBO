@@ -1,0 +1,56 @@
+@import 'Styled/styles.scss';
+.root {
+  padding: 32px;
+  background-color: #ffffff;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+
+  .title {
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: 0.51px;
+    text-align: left;
+    color: $titleColor;
+  }
+  .flexWrap {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    .restrict_item {
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin: 32px 16px 32px 16px;
+      width: 225px;
+
+      height: 8px + 14px + 36px;
+    }
+    .restrict_item:nth-child(4n) {
+      width: 150px !important;
+    }
+  }
+}
+
+.productPopup {
+  .itemWrap {
+    display: flex;
+    max-width: 416px !important;
+    max-height: 640px - 92px - 108px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    .productPopupItem {
+      width: 138px;
+      margin-bottom: 46px;
+    }
+  }
+
+  .popupBtn {
+    text-align: right;
+  }
+}
+
+.message {
+  min-width: 480px;
+}

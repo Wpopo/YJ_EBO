@@ -1,0 +1,129 @@
+@import 'Styled/styles.scss';
+
+$tableMaxHeight: calc(100vh - 133px - 84px - 64px - 58px - 48px);
+.body {
+  padding: 24px 32px 32px 32px;
+  height: calc(100% - 68px);
+  .tabContent {
+    padding-top: 32px;
+    height: calc(100% - 32px);
+  }
+  .header {
+    background-color: rgba($color: $secondaryColor, $alpha: 0.16);
+    border-radius: 16px;
+    padding: 18px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left {
+      display: flex;
+      align-items: center;
+      .mainTitle {
+        font-weight: bold;
+        font-size: 20px;
+        color: $infoColor;
+        padding: 0 26px;
+      }
+      .line {
+        height: 32px;
+        border-left: 1px solid $borderColor;
+        margin: 0 16px 0 32px;
+      }
+      .secondary {
+        display: flex;
+        flex-direction: column;
+        .title {
+          font-size: 12px;
+          color: $bodyColor;
+        }
+        .count {
+          font-size: 18px;
+          font-weight: 500;
+          color: $titleColor;
+        }
+        .unit {
+          font-size: 13px;
+          font-weight: 500;
+          color: $titleColor;
+        }
+      }
+    }
+  }
+}
+.filter {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 36px;
+  .title {
+    color: $titleColor;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .left {
+    display: flex;
+    [class^='MuiSelect-root'] {
+      width: 100px;
+      margin-right: 16px;
+    }
+    [class^='MuiAutocomplete-root'] {
+      [class^='MuiInputBase-root'] {
+        background-color: #fcfcfd;
+      }
+    }
+  }
+  &.space_between {
+    justify-content: space-between;
+  }
+}
+.content {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 83px);
+  [class^='MuiTableContainer-root'] {
+    max-height: $tableMaxHeight;
+  }
+  &.height2 {
+    height: calc(100% - 45px);
+  }
+  .more {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    color: $primaryColor;
+  }
+  .footer {
+    position: absolute;
+    bottom: -48px;
+    width: 100%;
+    margin: 0 -32px;
+    padding: 0 32px;
+    background-color: #f3f3f9;
+  }
+  .footer:before {
+    content: '';
+    position: absolute;
+
+    background-color: transparent;
+    bottom: 40px;
+    left: 15px;
+    height: 50px;
+    width: 25px;
+    border-top-left-radius: 25px;
+    box-shadow: 0 -25px 0 0 #f3f3f9;
+    transform: rotate(270deg);
+  }
+  .footer:after {
+    content: '';
+    position: absolute;
+
+    background-color: transparent;
+    bottom: 55px;
+    right: 0px;
+    height: 50px;
+    width: 25px;
+    border-top-left-radius: 25px;
+    box-shadow: 0 -25px 0 0 #f3f3f9;
+    transform: rotate(180deg);
+  }
+}
